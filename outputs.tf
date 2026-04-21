@@ -1,3 +1,8 @@
+output "region" {
+  value       = local.region
+  description = "string ||| The region where the EKS cluster resides."
+}
+
 output "cluster_arn" {
   value       = local.cluster_arn
   description = "string ||| AWS Arn for EKS Fargate cluster."
