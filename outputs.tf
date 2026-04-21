@@ -5,17 +5,22 @@ output "region" {
 
 output "cluster_arn" {
   value       = local.cluster_arn
-  description = "string ||| AWS Arn for EKS Fargate cluster."
+  description = "string ||| AWS Arn for EKS cluster."
+}
+
+output "cluster_id" {
+  value       = local.cluster_name
+  description = "string ||| Name of the EKS cluster."
 }
 
 output "cluster_name" {
   value       = local.cluster_name
-  description = "string ||| Name of the EKS Fargate cluster."
+  description = "string ||| ID of the EKS cluster."
 }
 
 output "cluster_endpoint" {
   value       = local.cluster_endpoint
-  description = "string ||| Endpoint address for EKS Fargate cluster."
+  description = "string ||| Endpoint address for EKS cluster."
 }
 
 output "cluster_ca_certificate" {
