@@ -5,6 +5,6 @@ locals {
 resource "kubernetes_namespace_v1" "this" {
   metadata {
     name   = local.k8s_namespace
-    labels = local.labels
+    labels = merge(local.labels, var.extra_labels)
   }
 }

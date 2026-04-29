@@ -1,3 +1,6 @@
+# 0.1.3 (Apr 29, 2026)
+* Added `var.extra_labels` to amend the built-in labels on the Kubernetes namespace.
+
 # 0.1.2 (Apr 21, 2026)
 * Added `cluster_id` to outputs.
 
